@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Toko Buah Uwais</title>
+  <link rel="stylesheet" href="styleco.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="back-button" id="back-to-catalog">&larr;</div>
+      <h1>Pesanan</h1>
+    </header>
+
+    <main>
+      <section class="order-info card">
+        <h2>Informasi Pesanan</h2>
+        <div class="info-row">
+          <span>ID Pesanan:</span>
+          <span id="order-id">Menunggu...</span>
+        </div>
+        <div class="info-row">
+          <span>Tanggal Pesanan:</span>
+          <span id="order-date"></span>
+        </div>
+      </section>
+
+      <section class="ordered-items card">
+        <h2>Item yang dipesan (<span id="total-items">0</span>)</h2>
+        <div id="order-items-list"></div>
+        <button class="add-item-btn" id="add-more-items">+ Tambah Item</button>
+      </section>
+
+      <section class="notes card">
+        <textarea placeholder="Tambah catatan lainnya" id="order-notes"></textarea>
+      </section>
+
+      <section class="customer-data card">
+        <h2>Data Pemesan</h2>
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama-lengkap" placeholder="Masukkan nama lengkap" />
+        <label>No. WhatsApp Pemesan</label>
+        <input type="text" id="whatsapp" placeholder="08XXXXXXXXXX" />
+      </section>
+
+      <section class="shipping-address card">
+        <h2>Alamat Pengiriman</h2>
+        <textarea placeholder="Masukkan alamat lengkap pengiriman" id="shipping-address"></textarea>
+      </section>
+
+      <section class="payment-details card">
+        <h2>Rincian Pembayaran</h2>
+        <div class="detail-row">
+          <span>Subtotal (<span id="subtotal-items">0</span> item)</span>
+          <span id="subtotal-amount">Rp0</span>
+        </div>
+        <div class="detail-row total">
+          <span>Total Pembayaran</span>
+          <span id="total-payment">Rp0</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="total-payment-footer">
+        <span>Total Pembayaran</span>
+        <span class="price" id="footer-total">Rp0</span>
+      </div>
+      <button class="send-btn" id="send-order">Kirim</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

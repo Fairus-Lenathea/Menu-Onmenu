@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Buah Uwais</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="back-arrow"><i class="fas fa-arrow-left"></i></div>
+      <img src="#" alt="Toko Buah Uwais Logo" class="header-logo" />
+    </header>
+
+    <div class="welcome-card">
+      <h2>Selamat Datang di Toko Buah Uwais</h2>
+      <p>Buah Segar Pilihan di Makassar</p>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Cari Produk..." id="search-input" />
+    </div>
+
+    <nav class="product-categories">
+      <button class="category-button active" data-category="semua">Semua</button>
+      <button class="category-button" data-category="buah">Buah</button>
+      <button class="category-button" data-category="sayur">Sayur</button>
+    </nav>
+
+    <!-- Elemen penting ini -->
+    <section class="product-grid" id="product-grid"></section>
+
+    <footer class="cart-summary">
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="item-count">0</span>
+      </div>
+      <div class="total-price">
+        <p>Total</p>
+        <p class="total-amount">Rp0</p>
+      </div>
+      <button  class="checkout-button" id="checkout-btn">Bayar</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

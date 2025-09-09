@@ -1,0 +1,607 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+  /* === WARNA PRIMER & SEKUNDER === */
+  --primary-color: #007f5f;
+  --primary-hover: #006b4f;
+  --primary-light: #b3f0e0;
+
+  /* === WARNA NETRAL / ABU-ABU === */
+  --bg-color: #f9fafb;
+  --card-bg-color: #ffffff;
+  --border-color-soft: #e5e7eb;
+  --border-color-medium: #d1d5db;
+  --border-color-strong: #9ca3af;
+
+  /* === WARNA TEKS === */
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+
+  /* === WARNA STATUS & NOTIFIKASI === */
+  --success-bg: #dcfce7;
+  --success-text: #166534;
+  --warning-bg: #fef3c7;
+  --warning-text: #92400e;
+  --danger-bg: #fee2e2;
+  --danger-text: #991b1b;
+
+  /* === TIPOGRAFI === */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-base: 1.5;
+  --line-height-tight: 1.25;
+}
+
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== LAYOUT & NAVIGASI ===== */
+.header {
+  background-color: var(--card-bg-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color-soft);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.back-arrow {
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.header-logo {
+  height: 32px;
+  width: auto;
+}
+
+/* ===== KOMPONEN HALAMAN KATALOG ===== */
+.welcome-card {
+  background-color: var(--primary-light);
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.welcome-card h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.welcome-card p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.search-bar {
+  margin: 1rem;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color-medium);
+  border-radius: 0.5rem;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-sans);
+  transition: border-color 0.2s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.product-categories {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.category-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color-medium);
+  border-radius: 9999px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  background-color: var(--card-bg-color);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.category-button.active {
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border-color: var(--primary-color);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color-soft);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.product-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  background-color: var(--border-color-soft);
+}
+
+.product-card h3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  padding: 0.75rem 0.75rem 0.25rem;
+}
+
+.product-desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  padding: 0 0.75rem;
+}
+
+.price {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+}
+
+.stock {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  padding: 0 0.75rem 0.5rem;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background-color: var(--primary-hover);
+}
+
+/* ===== KERANJANG & FOOTER ===== */
+.cart-summary {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--card-bg-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color-soft);
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cart-icon {
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+}
+
+.item-count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-price p {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+.total-amount {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.checkout-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkout-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.checkout-button:disabled {
+  background-color: var(--border-color-medium);
+  cursor: not-allowed;
+}
+
+/* ===== HALAMAN PESANAN ===== */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* ===== HALAMAN PESANAN – FIX LABEL TERTIMPA ===== */
+#order-page {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+#order-page .card {
+  background-color: var(--card-bg-color);
+  margin: 1rem;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#order-page h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  padding: 1rem;
+}
+
+#order-page h2 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+#order-page .info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+/* ===== FORMULIR – FIX LABEL TERTIMPA DENGAN INPUT ===== */
+#order-page .form-group {
+  margin-bottom: 1.5rem;
+}
+
+#order-page .form-group label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+#order-page .form-group input,
+#order-page .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color-medium);
+  border-radius: 0.5rem;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-sans);
+  background-color: var(--card-bg-color);
+  transition: all 0.2s ease;
+}
+
+#order-page .form-group input:focus,
+#order-page .form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+#order-page .form-group input::placeholder,
+#order-page .form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+#order-page textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ===== Item Detail ===== */
+#order-page .item-detail {
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#order-page .item-detail:last-child {
+  margin-bottom: 0;
+}
+
+#order-page .item-detail h3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+#order-page .item-detail p {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+#order-page .item-price-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+#order-page .quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#order-page .quantity-control button {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border: none;
+  border-radius: 50%;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#order-page .quantity-control button:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+#order-page .quantity-control span {
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+#order-page .delete-btn {
+  background: none;
+  color: var(--danger-text);
+  border: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#order-page .delete-btn:hover {
+  color: var(--primary-color);
+}
+
+#order-page .add-item-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border: 1px dashed var(--primary-color);
+  border-radius: 0.5rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#order-page .add-item-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border-color: var(--primary-color);
+}
+
+/* ===== Detail Pembayaran ===== */
+#order-page .detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+#order-page .detail-row.total {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-color-soft);
+  padding-top: 1rem;
+  margin-top: 0.75rem;
+}
+
+/* ===== Footer Pesanan ===== */
+#order-page footer {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--card-bg-color);
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border-color-soft);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 20;
+}
+
+#order-page .total-payment-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#order-page .total-payment-footer span:first-child {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+#order-page .total-payment-footer .price {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+#order-page .send-btn {
+  flex-shrink: 0;
+  padding: 0.75rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#order-page .send-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#order-page .send-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+#order-page .send-btn:disabled {
+  background-color: var(--border-color-medium);
+  color: var(--text-light);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+  #order-page footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #order-page .send-btn {
+    width: 100%;
+  }
+}
+
+/* ===== FIX OVERLAY – HILANGKAN FLOATING LABEL ===== */
+#order-page .loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+#order-page .loading-overlay.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+#order-page .loading-spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 4px solid var(--border-color-soft);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ===== HAPUS KODE FLOATING LABEL YANG MENYEBABKAN TERTIMPA ===== */
+#order-page .form-group label {
+  position: static !important;
+  transform: none !important;
+  background-color: transparent !important;
+}
