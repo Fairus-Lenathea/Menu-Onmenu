@@ -48,16 +48,18 @@
 }
 
 body {
-  font-family: var(--font-family-sans);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
-  background-color: var(--bg-color);
-  color: var(--text-primary);
+  background-color: #e9ecef; /* Latar luar abu-abu */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem 0;
 }
 
 .container {
-  max-width: 100%;
-  margin: 0 auto;
+  width: 360px; /* Tetap seperti handphone */
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
