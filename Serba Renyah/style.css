@@ -63,7 +63,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
+}
 /* ===== LAYOUT & NAVIGASI ===== */
 .header {
   background-color: var(--card-bg-color);
