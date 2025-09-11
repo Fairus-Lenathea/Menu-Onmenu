@@ -301,6 +301,8 @@ footer {
     width: 100%;
   }
 }
-.product-card.hidden {
-  display: none;
+.product-card {
+  display: flex;          /* kontainer flex */
+  flex-direction: column; /* susun elemen vertikal */
+  height: 100%;           /* isi tinggi kolom grid */
 }
