@@ -1,44 +1,172 @@
 // ===== DATA PRODUK =====
 const products = [
   {
-    name: 'Pir Xianglie',
-    description: 'Buah pir import, manis dan renyah.',
-    price: 45000,
-    stock: 50,
-    category: 'buah',
-    imageUrl: './img/Pir Xianglie.jpg'
-  },
-  {
-    name: 'Shine Muscat',
-    description: 'Anggur premium tanpa biji, sangat manis.',
-    price: 50000,
-    stock: 30,
-    category: 'buah',
-    imageUrl: './img/Shine Muscat.jpg'
-  },
-  {
-    name: 'Pisang Cavendish',
-    description: 'Pisang lokal ukuran besar, cocok untuk smoothie.',
-    price: 20000,
+    name: 'Basreng Stik Pedas 1 Kg',
+    description: 'Camilan lezat dan renyah',
+    price: 80000,
     stock: 100,
-    category: 'buah',
-    imageUrl: './img/Pisang Cavendish.jpg'
+    category: 'camilan',
+    imageUrl: './img/Basreng Stik Pedas 1 Kg.jpg'
   },
   {
-    name: 'Beet',
-    description: 'Sayur bit segar, cocok untuk jus atau salad.',
-    price: 45000,
-    stock: 25,
-    category: 'sayur',
-    imageUrl: './img/Beet.jpg'
+    name: 'Basreng Stik Original 1 Kg',
+    description: 'Camilan lezat dan renyah',
+    price: 80000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Basreng Stik Original 1 Kg.jpg'
   },
   {
-    name: 'Anggur Red Globe',
-    description: 'Anggur merah besar, manis dan juicy.',
+    name: 'Kripik Tempe Rasa Original 1kg',
+    description: 'Camilan lezat dan renyah',
     price: 70000,
-    stock: 40,
-    category: 'buah',
-    imageUrl: './img/Anggur Red Globe.jpg'
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kripik Tempe Rasa Original 1kg.jpg'
+  },
+  {
+    name: 'Opak Singkong Pedas Manis 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 60000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Opak Singkong Pedas Manis 1kg.jpg'
+  },
+  {
+    name: 'Stik Sukun 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 75000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Stik Sukun 1kg.jpg'
+  },
+  {
+    name: 'Mini Astor Vanilla 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 50000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Mini Astor Vanilla 1kg.jpg'
+  },
+  {
+    name: 'Mini Astor Coklat Jeruk 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 55000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Mini Astor Coklat Jeruk 1kg.jpg'
+  },
+  {
+    name: 'Cokelat Sereal 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 45000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Cokelat Sereal 1kg.jpg'
+  },
+  {
+    name: 'Mini Soes Coklat 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 90000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Mini Soes Coklat 1kg.jpg'
+  },
+  {
+    name: 'Kue Selai Hati 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 90000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kue Selai Hati 1kg.jpg'
+  },
+  {
+    name: 'Biskuit Wijen Caramel 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 70000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Biskuit Wijen Caramel 1kg.jpg'
+  },
+  {
+    name: 'Makaroni Pedas 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 40000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Makaroni Pedas 1kg.jpg'
+  },
+  {
+    name: 'Ajisan 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 55000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Ajisan 1kg.jpg'
+  },
+  {
+    name: 'Pilus Jagung 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 50000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Pilus Jagung 1kg.jpg'
+  },
+  {
+    name: 'Cup Cup Balado 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 60000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Cup Cup Balado 1kg.jpg'
+  },
+  {
+    name: 'Kerupuk Seblak 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 70000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kerupuk Seblak 1kg.jpg'
+  },
+  {
+    name: 'Kacang Atom 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 60000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kacang Atom 1kg.jpg'
+  },
+  {
+    name: 'Kacang Kentucky 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 65000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kacang Kentucky 1kg.jpg'
+  },
+  {
+    name: 'Kacang Thailand 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 82000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kacang Thailand 1kg.jpg'
+  },
+  {
+    name: 'Kacang Koro Kupas 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 45000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kacang Koro Kupas 1kg.jpg'
+  },
+  {
+    name: 'Kacang Campur 1kg',
+    description: 'Camilan lezat dan renyah',
+    price: 50000,
+    stock: 100,
+    category: 'camilan',
+    imageUrl: './img/Kacang Campur 1kg.jpg'
   }
 ];
 
