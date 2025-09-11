@@ -6,7 +6,7 @@ const products = [
     price: 80000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Basreng Stik Pedas 1 Kg.jpg'
+    imageUrl: './img/Basreng Pedas.jpg'
   },
   {
     name: 'Basreng Stik Original 1 Kg',
@@ -14,7 +14,7 @@ const products = [
     price: 80000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Basreng Stik Original 1 Kg.jpg'
+    imageUrl: './img/Basreng Original.jpg'
   },
   {
     name: 'Kripik Tempe Rasa Original 1kg',
@@ -22,7 +22,7 @@ const products = [
     price: 70000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kripik Tempe Rasa Original 1kg.jpg'
+    imageUrl: './img/Kripik Tempe Original.jpg'
   },
   {
     name: 'Opak Singkong Pedas Manis 1kg',
@@ -30,7 +30,7 @@ const products = [
     price: 60000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Opak Singkong Pedas Manis 1kg.jpg'
+    imageUrl: './img/Opak Singkong.jpg'
   },
   {
     name: 'Stik Sukun 1kg',
@@ -38,7 +38,7 @@ const products = [
     price: 75000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Stik Sukun 1kg.jpg'
+    imageUrl: './img/Stik Sukun.jpg'
   },
   {
     name: 'Mini Astor Vanilla 1kg',
@@ -46,7 +46,7 @@ const products = [
     price: 50000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Mini Astor Vanilla 1kg.jpg'
+    imageUrl: './img/Mini Astor Vanilla.jpg'
   },
   {
     name: 'Mini Astor Coklat Jeruk 1kg',
@@ -54,7 +54,7 @@ const products = [
     price: 55000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Mini Astor Coklat Jeruk 1kg.jpg'
+    imageUrl: './img/Mini Astor Coklat Jeruk.jpg'
   },
   {
     name: 'Cokelat Sereal 1kg',
@@ -62,7 +62,7 @@ const products = [
     price: 45000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Cokelat Sereal 1kg.jpg'
+    imageUrl: './img/Cokelat Sereal.jpg'
   },
   {
     name: 'Mini Soes Coklat 1kg',
@@ -70,7 +70,7 @@ const products = [
     price: 90000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Mini Soes Coklat 1kg.jpg'
+    imageUrl: './img/Mini Soes Cokelat.jpg'
   },
   {
     name: 'Kue Selai Hati 1kg',
@@ -78,7 +78,7 @@ const products = [
     price: 90000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kue Selai Hati 1kg.jpg'
+    imageUrl: './img/Selai Hati.jpg'
   },
   {
     name: 'Biskuit Wijen Caramel 1kg',
@@ -86,7 +86,7 @@ const products = [
     price: 70000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Biskuit Wijen Caramel 1kg.jpg'
+    imageUrl: './img/Biskuit Wijen Caramel.jpg'
   },
   {
     name: 'Makaroni Pedas 1kg',
@@ -94,7 +94,7 @@ const products = [
     price: 40000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Makaroni Pedas 1kg.jpg'
+    imageUrl: './img/Makaroni Pedas.jpg'
   },
   {
     name: 'Ajisan 1kg',
@@ -102,7 +102,7 @@ const products = [
     price: 55000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Ajisan 1kg.jpg'
+    imageUrl: './img/Ajisan.jpg'
   },
   {
     name: 'Pilus Jagung 1kg',
@@ -110,7 +110,7 @@ const products = [
     price: 50000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Pilus Jagung 1kg.jpg'
+    imageUrl: './img/Pilus Jagung .jpg'
   },
   {
     name: 'Cup Cup Balado 1kg',
@@ -118,7 +118,7 @@ const products = [
     price: 60000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Cup Cup Balado 1kg.jpg'
+    imageUrl: './img/Cup Cup Balado.jpg'
   },
   {
     name: 'Kerupuk Seblak 1kg',
@@ -126,7 +126,7 @@ const products = [
     price: 70000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kerupuk Seblak 1kg.jpg'
+    imageUrl: './img/Kerupuk Seblak.jpg'
   },
   {
     name: 'Kacang Atom 1kg',
@@ -134,7 +134,7 @@ const products = [
     price: 60000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kacang Atom 1kg.jpg'
+    imageUrl: './img/Kacang Atom.jpg'
   },
   {
     name: 'Kacang Kentucky 1kg',
@@ -142,7 +142,7 @@ const products = [
     price: 65000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kacang Kentucky 1kg.jpg'
+    imageUrl: './img/Kacang Kentucky.jpg'
   },
   {
     name: 'Kacang Thailand 1kg',
@@ -150,7 +150,7 @@ const products = [
     price: 82000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kacang Thailand 1kg.jpg'
+    imageUrl: './img/Kacang Thailand.jpg'
   },
   {
     name: 'Kacang Koro Kupas 1kg',
@@ -158,7 +158,7 @@ const products = [
     price: 45000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kacang Koro Kupas 1kg.jpg'
+    imageUrl: './img/Kacang Koro Kupas.jpg'
   },
   {
     name: 'Kacang Campur 1kg',
@@ -166,7 +166,7 @@ const products = [
     price: 50000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kacang Campur 1kg.jpg'
+    imageUrl: './img/Kacang Campur.jpg'
   }
 ];
 
