@@ -1,9 +1,9 @@
 /* ===== ROOT VARIABLES ===== */
 :root {
   /* === WARNA PRIMER & SEKUNDER === */
-  --primary-color: #007f5f;
-  --primary-hover: #006b4f;
-  --primary-light: #b3f0e0;
+  --primary-color: #F60801;
+  --primary-hover: #d60701;
+  --primary-light: #fec4c2;
 
   /* === WARNA NETRAL / ABU-ABU === */
   --bg-color: #f9fafb;
