@@ -62,7 +62,7 @@ const products = [
     price: 45000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Cokelat Sereal.jpg'
+    imageUrl: './img/Sereal Cokelat.jpg'
   },
   {
     name: 'Mini Soes Coklat 1kg',
@@ -102,7 +102,7 @@ const products = [
     price: 55000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Ajisan.jpg'
+    imageUrl: './img/Ajisan Pilus Sakura.jpg'
   },
   {
     name: 'Pilus Jagung 1kg',
@@ -110,7 +110,7 @@ const products = [
     price: 50000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Pilus Jagung .jpg'
+    imageUrl: './img/Pilus Jagungx`x`.jpg'
   },
   {
     name: 'Cup Cup Balado 1kg',
@@ -134,7 +134,7 @@ const products = [
     price: 60000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Kacang Atom.jpg'
+    imageUrl: './img/Kacang Atom Oven.jpg'
   },
   {
     name: 'Kacang Kentucky 1kg',
