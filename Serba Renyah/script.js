@@ -110,7 +110,7 @@ const products = [
     price: 50000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Pilus Jagungx`x`.jpg'
+    imageUrl: './img/Pilus Jagung.jpg'
   },
   {
     name: 'Cup Cup Balado 1kg',
