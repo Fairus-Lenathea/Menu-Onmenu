@@ -606,3 +606,6 @@ body {
   transform: none !important;
   background-color: transparent !important;
 }
+.product-card.hidden {
+  display: none;
+}

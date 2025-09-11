@@ -1,450 +1,73 @@
 // ===== DATA PRODUK =====
 const products = [
-  {
-    name: 'Basreng Stik Pedas 1 Kg',
-    description: 'Camilan lezat dan renyah',
-    price: 80000,
-    stock: 100,
-    imageUrl: './img/Basreng Pedas.jpg'
-  },
-  {
-    name: 'Basreng Stik Original 1 Kg',
-    description: 'Camilan lezat dan renyah',
-    price: 80000,
-    stock: 100,
-    imageUrl: './img/Basreng Original.jpg'
-  },
-  {
-    name: 'Kripik Tempe Rasa Original 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 70000,
-    stock: 100,
-    imageUrl: './img/Kripik Tempe Original.jpg'
-  },
-  {
-    name: 'Opak Singkong Pedas Manis 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 60000,
-    stock: 100,
-    imageUrl: './img/Opak Singkong.jpg'
-  },
-  {
-    name: 'Stik Sukun 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 75000,
-    stock: 100,
-    imageUrl: './img/Stik Sukun.jpg'
-  },
-  {
-    name: 'Mini Astor Vanilla 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 50000,
-    stock: 100,
-    imageUrl: './img/Mini Astor Vanilla.jpg'
-  },
-  {
-    name: 'Mini Astor Coklat Jeruk 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 55000,
-    stock: 100,
-    imageUrl: './img/Mini Astor Coklat Jeruk.jpg'
-  },
-  {
-    name: 'Cokelat Sereal 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 45000,
-    stock: 100,
-    imageUrl: './img/Sereal Cokelat.jpg'
-  },
-  {
-    name: 'Mini Soes Coklat 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 90000,
-    stock: 100,
-    imageUrl: './img/Mini Soes Cokelat.jpg'
-  },
-  {
-    name: 'Kue Selai Hati 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 90000,
-    stock: 100,
-    imageUrl: './img/Selai Hati.jpg'
-  },
-  {
-    name: 'Biskuit Wijen Caramel 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 70000,
-    stock: 100,
-    imageUrl: './img/Biskuit Wijen Caramel.jpg'
-  },
-  {
-    name: 'Makaroni Pedas 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 40000,
-    stock: 100,
-    imageUrl: './img/Makaroni Pedas.jpg'
-  },
-  {
-    name: 'Ajisan 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 55000,
-    stock: 100,
-    imageUrl: './img/Ajisan Pilus sakura.jpg'
-  },
-  {
-    name: 'Pilus Jagung 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 50000,
-    stock: 100,
-    imageUrl: './img/Pilus jagung.jpg'
-  },
-  {
-    name: 'Cup Cup Balado 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 60000,
-    stock: 100,
-    imageUrl: './img/Cup Cup Balado.jpg'
-  },
-  {
-    name: 'Kerupuk Seblak 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 70000,
-    stock: 100,
-    imageUrl: './img/Kerupuk Seblak.jpg'
-  },
-  {
-    name: 'Kacang Atom 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 60000,
-    stock: 100,
-    imageUrl: './img/Kacang Atom Oven.jpg'
-  },
-  {
-    name: 'Kacang Kentucky 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 65000,
-    stock: 100,
-    imageUrl: './img/Kacang Kentucky.jpg'
-  },
-  {
-    name: 'Kacang Thailand 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 82000,
-    stock: 100,
-    imageUrl: './img/Kacang Thailand.jpg'
-  },
-  {
-    name: 'Kacang Koro Kupas 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 45000,
-    stock: 100,
-    imageUrl: './img/Kacang Koro Kupas.jpg'
-  },
-  {
-    name: 'Kacang Campur 1kg',
-    description: 'Camilan lezat dan renyah',
-    price: 50000,
-    stock: 100,
-    imageUrl: './img/Kacang Campur.jpg'
-  },
+  // ==== 1 Kg ====
+  { name: 'Basreng Stik Pedas 1 Kg', description: 'Camilan lezat dan renyah', price: 80000, stock: 100, imageUrl: './img/Basreng Pedas.jpg' },
+  { name: 'Basreng Stik Original 1 Kg', description: 'Camilan lezat dan renyah', price: 80000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
+  { name: 'Kripik Tempe Rasa Original 1kg', description: 'Camilan lezat dan renyah', price: 70000, stock: 100, imageUrl: './img/Kripik Tempe Original.jpg' },
+  { name: 'Opak Singkong Pedas Manis 1kg', description: 'Camilan lezat dan renyah', price: 60000, stock: 100, imageUrl: './img/Opak Singkong.jpg' },
+  { name: 'Stik Sukun 1kg', description: 'Camilan lezat dan renyah', price: 75000, stock: 100, imageUrl: './img/Stik Sukun.jpg' },
+  { name: 'Mini Astor Vanilla 1kg', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
+  { name: 'Mini Astor Coklat Jeruk 1kg', description: 'Camilan lezat dan renyah', price: 55000, stock: 100, imageUrl: './img/Mini Astor Coklat Jeruk.jpg' },
+  { name: 'Cokelat Sereal 1kg', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Sereal Cokelat.jpg' },
+  { name: 'Mini Soes Coklat 1kg', description: 'Camilan lezat dan renyah', price: 90000, stock: 100, imageUrl: './img/Mini Soes Cokelat.jpg' },
+  { name: 'Kue Selai Hati 1kg', description: 'Camilan lezat dan renyah', price: 90000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
+  { name: 'Biskuit Wijen Caramel 1kg', description: 'Camilan lezat dan renyah', price: 70000, stock: 100, imageUrl: './img/Biskuit Wijen Caramel.jpg' },
+  { name: 'Makaroni Pedas 1kg', description: 'Camilan lezat dan renyah', price: 40000, stock: 100, imageUrl: './img/Makaroni Pedas.jpg' },
+  { name: 'Ajisan 1kg', description: 'Camilan lezat dan renyah', price: 55000, stock: 100, imageUrl: './img/Ajisan Pilus sakura.jpg' },
+  { name: 'Pilus Jagung 1kg', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Pilus jagung.jpg' },
+  { name: 'Cup Cup Balado 1kg', description: 'Camilan lezat dan renyah', price: 60000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
+  { name: 'Kerupuk Seblak 1kg', description: 'Camilan lezat dan renyah', price: 70000, stock: 100, imageUrl: './img/Kerupuk Seblak.jpg' },
+  { name: 'Kacang Atom 1kg', description: 'Camilan lezat dan renyah', price: 60000, stock: 100, imageUrl: './img/Kacang Atom Oven.jpg' },
+  { name: 'Kacang Kentucky 1kg', description: 'Camilan lezat dan renyah', price: 65000, stock: 100, imageUrl: './img/Kacang Kentucky.jpg' },
+  { name: 'Kacang Thailand 1kg', description: 'Camilan lezat dan renyah', price: 82000, stock: 100, imageUrl: './img/Kacang Thailand.jpg' },
+  { name: 'Kacang Koro Kupas 1kg', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Kacang Koro Kupas.jpg' },
+  { name: 'Kacang Campur 1kg', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Kacang Campur.jpg' },
 
-  // ==== Produk 500g ====
-  {
-    name: 'Basreng Stik Pedas 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 45000,
-    stock: 100,
-    imageUrl: './img/Basreng Pedas 500g.jpg'
-  },
-  {
-    name: 'Basreng Stik Original 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 45000,
-    stock: 100,
-    imageUrl: './img/Basreng Original 500g.jpg'
-  },
-  {
-    name: 'Kripik Tempe Rasa Original 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 40000,
-    stock: 100,
-    imageUrl: './img/Kripik Tempe Original 500g.jpg'
-  },
-  {
-    name: 'Opak Singkong Pedas Manis 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 35000,
-    stock: 100,
-    imageUrl: './img/Opak Singkong 500g.jpg'
-  },
-  {
-    name: 'Stik Sukun 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 42000,
-    stock: 100,
-    imageUrl: './img/Stik Sukun 500g.jpg'
-  },
-  {
-    name: 'Mini Astor Vanilla 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 30000,
-    stock: 100,
-    imageUrl: './img/Mini Astor Vanilla 500g.jpg'
-  },
-  {
-    name: 'Mini Astor Coklat Jeruk 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 32000,
-    stock: 100,
-    imageUrl: './img/Mini Astor Coklat Jeruk 500g.jpg'
-  },
-  {
-    name: 'Cokelat Sereal 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 28000,
-    stock: 100,
-    imageUrl: './img/Sereal Cokelat 500g.jpg'
-  },
-  {
-    name: 'Mini Soes Coklat 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 50000,
-    stock: 100,
-    imageUrl: './img/Mini Soes Cokelat 500g.jpg'
-  },
-  {
-    name: 'Kue Selai Hati 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 50000,
-    stock: 100,
-    imageUrl: './img/Selai Hati 500g.jpg'
-  },
-  {
-    name: 'Biskuit Wijen Caramel 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 40000,
-    stock: 100,
-    imageUrl: './img/Biskuit Wijen Caramel 500g.jpg'
-  },
-  {
-    name: 'Makaroni Pedas 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 25000,
-    stock: 100,
-    imageUrl: './img/Makaroni Pedas 500g.jpg'
-  },
-  {
-    name: 'Ajisan 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 32000,
-    stock: 100,
-    imageUrl: './img/Ajisan Pilus sakura 500g.jpg'
-  },
-  {
-    name: 'Pilus Jagung 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 30000,
-    stock: 100,
-    imageUrl: './img/Pilus jagung 500g.jpg'
-  },
-  {
-    name: 'Cup Cup Balado 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 35000,
-    stock: 100,
-    imageUrl: './img/Cup Cup Balado 500g.jpg'
-  },
-  {
-    name: 'Kerupuk Seblak 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 40000,
-    stock: 100,
-    imageUrl: './img/Kerupuk Seblak 500g.jpg'
-  },
-  {
-    name: 'Kacang Atom 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 35000,
-    stock: 100,
-    imageUrl: './img/Kacang Atom Oven 500g.jpg'
-  },
-  {
-    name: 'Kacang Kentucky 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 38000,
-    stock: 100,
-    imageUrl: './img/Kacang Kentucky 500g.jpg'
-  },
-  {
-    name: 'Kacang Thailand 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 46000,
-    stock: 100,
-    imageUrl: './img/Kacang Thailand 500g.jpg'
-  },
-  {
-    name: 'Kacang Koro Kupas 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 28000,
-    stock: 100,
-    imageUrl: './img/Kacang Koro Kupas 500g.jpg'
-  },
-  {
-    name: 'Kacang Campur 500g',
-    description: 'Camilan lezat dan renyah',
-    price: 30000,
-    stock: 100,
-    imageUrl: './img/Kacang Campur 500g.jpg'
-  },
+  // ==== 500g ====
+  { name: 'Basreng Stik Pedas 500g', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Basreng Pedas 500g.jpg' },
+  { name: 'Basreng Stik Original 500g', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Basreng Original 500g.jpg' },
+  { name: 'Kripik Tempe Rasa Original 500g', description: 'Camilan lezat dan renyah', price: 40000, stock: 100, imageUrl: './img/Kripik Tempe Original 500g.jpg' },
+  { name: 'Opak Singkong Pedas Manis 500g', description: 'Camilan lezat dan renyah', price: 35000, stock: 100, imageUrl: './img/Opak Singkong 500g.jpg' },
+  { name: 'Stik Sukun 500g', description: 'Camilan lezat dan renyah', price: 42000, stock: 100, imageUrl: './img/Stik Sukun 500g.jpg' },
+  { name: 'Mini Astor Vanilla 500g', description: 'Camilan lezat dan renyah', price: 30000, stock: 100, imageUrl: './img/Mini Astor Vanilla 500g.jpg' },
+  { name: 'Mini Astor Coklat Jeruk 500g', description: 'Camilan lezat dan renyah', price: 32000, stock: 100, imageUrl: './img/Mini Astor Coklat Jeruk 500g.jpg' },
+  { name: 'Cokelat Sereal 500g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Sereal Cokelat 500g.jpg' },
+  { name: 'Mini Soes Coklat 500g', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Mini Soes Cokelat 500g.jpg' },
+  { name: 'Kue Selai Hati 500g', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Selai Hati 500g.jpg' },
+  { name: 'Biskuit Wijen Caramel 500g', description: 'Camilan lezat dan renyah', price: 40000, stock: 100, imageUrl: './img/Biskuit Wijen Caramel 500g.jpg' },
+  { name: 'Makaroni Pedas 500g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Makaroni Pedas 500g.jpg' },
+  { name: 'Ajisan 500g', description: 'Camilan lezat dan renyah', price: 32000, stock: 100, imageUrl: './img/Ajisan Pilus sakura 500g.jpg' },
+  { name: 'Pilus Jagung 500g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Pilus jagung 500g.jpg' },
+  { name: 'Cup Cup Balado 500g', description: 'Camilan lezat dan renyah', price: 33000, stock: 100, imageUrl: './img/Cup Cup Balado 500g.jpg' },
+  { name: 'Kerupuk Seblak 500g', description: 'Camilan lezat dan renyah', price: 37000, stock: 100, imageUrl: './img/Kerupuk Seblak 500g.jpg' },
+  { name: 'Kacang Atom 500g', description: 'Camilan lezat dan renyah', price: 33000, stock: 100, imageUrl: './img/Kacang Atom Oven 500g.jpg' },
+  { name: 'Kacang Kentucky 500g', description: 'Camilan lezat dan renyah', price: 35000, stock: 100, imageUrl: './img/Kacang Kentucky 500g.jpg' },
+  { name: 'Kacang Thailand 500g', description: 'Camilan lezat dan renyah', price: 44000, stock: 100, imageUrl: './img/Kacang Thailand 500g.jpg' },
+  { name: 'Kacang Koro Kupas 500g', description: 'Camilan lezat dan renyah', price: 26000, stock: 100, imageUrl: './img/Kacang Koro Kupas 500g.jpg' },
+  { name: 'Kacang Campur 500g', description: 'Camilan lezat dan renyah', price: 29000, stock: 100, imageUrl: './img/Kacang Campur 500g.jpg' },
 
-  // ==== Produk 250g ====
-  {
-    name: 'Basreng Stik Pedas 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 25000,
-    stock: 100,
-    imageUrl: './img/Basreng Pedas 250g.jpg'
-  },
-  {
-    name: 'Basreng Stik Original 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 25000,
-    stock: 100,
-    imageUrl: './img/Basreng Original 250g.jpg'
-  },
-  {
-    name: 'Kripik Tempe Rasa Original 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 22000,
-    stock: 100,
-    imageUrl: './img/Kripik Tempe Original 250g.jpg'
-  },
-  {
-    name: 'Opak Singkong Pedas Manis 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 20000,
-    stock: 100,
-    imageUrl: './img/Opak Singkong 250g.jpg'
-  },
-  {
-    name: 'Stik Sukun 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 23000,
-    stock: 100,
-    imageUrl: './img/Stik Sukun 250g.jpg'
-  },
-  {
-    name: 'Mini Astor Vanilla 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 17000,
-    stock: 100,
-    imageUrl: './img/Mini Astor Vanilla 250g.jpg'
-  },
-  {
-    name: 'Mini Astor Coklat Jeruk 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 18000,
-    stock: 100,
-    imageUrl: './img/Mini Astor Coklat Jeruk 250g.jpg'
-  },
-  {
-    name: 'Cokelat Sereal 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 16000,
-    stock: 100,
-    imageUrl: './img/Sereal Cokelat 250g.jpg'
-  },
-  {
-    name: 'Mini Soes Coklat 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 28000,
-    stock: 100,
-    imageUrl: './img/Mini Soes Coklat 250g.jpg'
-  },
-  {
-    name: 'Kue Selai Hati 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 28000,
-    stock: 100,
-    imageUrl: './img/Selai Hati 250g.jpg'
-  },
-  {
-    name: 'Biskuit Wijen Caramel 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 22000,
-    stock: 100,
-    imageUrl: './img/Biskuit Wijen Caramel 250g.jpg'
-  },
-  {
-    name: 'Makaroni Pedas 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 15000,
-    stock: 100,
-    imageUrl: './img/Makaroni Pedas 250g.jpg'
-  },
-  {
-    name: 'Ajisan 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 18000,
-    stock: 100,
-    imageUrl: './img/Ajisan Pilus sakura 250g.jpg'
-  },
-  {
-    name: 'Pilus Jagung 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 17000,
-    stock: 100,
-    imageUrl: './img/Pilus jagung 250g.jpg'
-  },
-  {
-    name: 'Cup Cup Balado 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 20000,
-    stock: 100,
-    imageUrl: './img/Cup Cup Balado 250g.jpg'
-  },
-  {
-    name: 'Kerupuk Seblak 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 22000,
-    stock: 100,
-    imageUrl: './img/Kerupuk Seblak 250g.jpg'
-  },
-  {
-    name: 'Kacang Atom 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 20000,
-    stock: 100,
-    imageUrl: './img/Kacang Atom Oven 250g.jpg'
-  },
-  {
-    name: 'Kacang Kentucky 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 21000,
-    stock: 100,
-    imageUrl: './img/Kacang Kentucky 250g.jpg'
-  },
-  {
-    name: 'Kacang Thailand 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 25000,
-    stock: 100,
-    imageUrl: './img/Kacang Thailand 250g.jpg'
-  },
-  {
-    name: 'Kacang Koro Kupas 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 16000,
-    stock: 100,
-    imageUrl: './img/Kacang Koro Kupas 250g.jpg'
-  },
-  {
-    name: 'Kacang Campur 250g',
-    description: 'Camilan lezat dan renyah',
-    price: 17000,
-    stock: 100,
-    imageUrl: './img/Kacang Campur 250g.jpg'
-  }
+  // ==== 250g ====
+  { name: 'Basreng Stik Pedas 250g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Basreng Pedas 250g.jpg' },
+  { name: 'Basreng Stik Original 250g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Basreng Original 250g.jpg' },
+  { name: 'Kripik Tempe Rasa Original 250g', description: 'Camilan lezat dan renyah', price: 22000, stock: 100, imageUrl: './img/Kripik Tempe Original 250g.jpg' },
+  { name: 'Opak Singkong Pedas Manis 250g', description: 'Camilan lezat dan renyah', price: 20000, stock: 100, imageUrl: './img/Opak Singkong 250g.jpg' },
+  { name: 'Stik Sukun 250g', description: 'Camilan lezat dan renyah', price: 23000, stock: 100, imageUrl: './img/Stik Sukun 250g.jpg' },
+  { name: 'Mini Astor Vanilla 250g', description: 'Camilan lezat dan renyah', price: 17000, stock: 100, imageUrl: './img/Mini Astor Vanilla 250g.jpg' },
+  { name: 'Mini Astor Coklat Jeruk 250g', description: 'Camilan lezat dan renyah', price: 18000, stock: 100, imageUrl: './img/Mini Astor Coklat Jeruk 250g.jpg' },
+  { name: 'Cokelat Sereal 250g', description: 'Camilan lezat dan renyah', price: 16000, stock: 100, imageUrl: './img/Sereal Cokelat 250g.jpg' },
+  { name: 'Mini Soes Coklat 250g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Mini Soes Coklat 250g.jpg' },
+  { name: 'Kue Selai Hati 250g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Selai Hati 250g.jpg' },
+  { name: 'Biskuit Wijen Caramel 250g', description: 'Camilan lezat dan renyah', price: 22000, stock: 100, imageUrl: './img/Biskuit Wijen Caramel 250g.jpg' },
+  { name: 'Makaroni Pedas 250g', description: 'Camilan lezat dan renyah', price: 15000, stock: 100, imageUrl: './img/Makaroni Pedas 250g.jpg' },
+  { name: 'Ajisan 250g', description: 'Camilan lezat dan renyah', price: 18000, stock: 100, imageUrl: './img/Ajisan Pilus sakura 250g.jpg' },
+  { name: 'Pilus Jagung 250g', description: 'Camilan lezat dan renyah', price: 17000, stock: 100, imageUrl: './img/Pilus jagung 250g.jpg' },
+  { name: 'Cup Cup Balado 250g', description: 'Camilan lezat dan renyah', price: 20000, stock: 100, imageUrl: './img/Cup Cup Balado 250g.jpg' },
+  { name: 'Kerupuk Seblak 250g', description: 'Camilan lezat dan renyah', price: 22000, stock: 100, imageUrl: './img/Kerupuk Seblak 250g.jpg' },
+  { name: 'Kacang Atom 250g', description: 'Camilan lezat dan renyah', price: 20000, stock: 100, imageUrl: './img/Kacang Atom Oven 250g.jpg' },
+  { name: 'Kacang Kentucky 250g', description: 'Camilan lezat dan renyah', price: 21000, stock: 100, imageUrl: './img/Kacang Kentucky 250g.jpg' },
+  { name: 'Kacang Thailand 250g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Kacang Thailand 250g.jpg' },
+  { name: 'Kacang Koro Kupas 250g', description: 'Camilan lezat dan renyah', price: 16000, stock: 100, imageUrl: './img/Kacang Koro Kupas 250g.jpg' },
+  { name: 'Kacang Campur 250g', description: 'Camilan lezat dan renyah', price: 17000, stock: 100, imageUrl: './img/Kacang Campur 250g.jpg' }
 ];
 
 let cart = [];
@@ -545,7 +168,9 @@ if (isCatalog) {
 
   function filterProducts(category) {
     document.querySelectorAll('.product-card').forEach(card => {
-      card.classList.toggle('hidden', category !== 'semua' && card.dataset.category !== category);
+      const cardCategory = card.dataset.category;
+      const shouldShow = category === 'semua' || cardCategory === category;
+      card.classList.toggle('hidden', !shouldShow);
     });
   }
 
@@ -554,7 +179,13 @@ if (isCatalog) {
     document.querySelectorAll('.product-card').forEach(card => {
       const name = card.querySelector('h3').textContent.toLowerCase();
       const desc = card.querySelector('.product-desc').textContent.toLowerCase();
-      card.classList.toggle('hidden', !name.includes(term) && !desc.includes(term));
+      const matchesSearch = name.includes(term) || desc.includes(term);
+      const isVisible = !card.classList.contains('hidden');
+      if (!matchesSearch && isVisible) {
+        card.classList.add('hidden');
+      } else if (matchesSearch && isVisible) {
+        card.classList.remove('hidden');
+      }
     });
   }
 }
