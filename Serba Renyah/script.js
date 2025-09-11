@@ -262,33 +262,37 @@ if (isCheckout) {
     }
   };
 
-  function processOrder() {
-    const nama = document.getElementById('nama-lengkap')?.value.trim();
-    const wa = document.getElementById('whatsapp')?.value.trim();
-    const alamat = document.getElementById('shipping-address')?.value.trim();
-    const catatan = document.getElementById('order-notes')?.value.trim();
+    function processOrder() {
+  const nama = document.getElementById('nama-lengkap')?.value.trim();
+  const wa = document.getElementById('whatsapp')?.value.trim();
+  const alamat = document.getElementById('shipping-address')?.value.trim();
+  const catatan = document.getElementById('order-notes')?.value.trim();
 
-    if (!nama || !wa || !alamat) {
-      alert('Lengkapi nama, WhatsApp, dan alamat!');
-      return;
-    }
+  if (!nama || !wa || !alamat) {
+    alert('Lengkapi nama, WhatsApp, dan alamat!');
+    return;
+  }
 
-    const total = cart.reduce((a, b) => a + b.price * b.quantity, 0);
-    let msg = `*PESANAN TOKO SERBA RENYAH*\n\n`;
-    msg += `Nama: ${nama}\nWhatsApp: ${wa}\nAlamat: ${alamat}\n\n`;
-    cart.forEach(i => msg += `• ${i.name} - ${i.quantity}x ${formatCurrency(i.price)}\n`);
-    msg += `\n*TOTAL: ${formatCurrency(total)}*`;
-    if (catatan) msg += `\nCatatan: ${catatan}`;
+  const orderId = document.getElementById('order-id').textContent;
+  const orderDate = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Makassar', dateStyle: 'full', timeStyle: 'short' });
 
-    const waNumber = '6285176773633';
-    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+  const total = cart.reduce((a, b) => a + b.price * b.quantity, 0);
+  let msg = `*PESANAN TOKO SERBA RENYAH*\n\n`;
+  msg += `ID Pesanan: ${orderId}\nTanggal Pesanan: ${orderDate}\n\n`;
+  msg += `Nama: ${nama}\nWhatsApp: ${wa}\nAlamat: ${alamat}\n\n`;
+  cart.forEach(i => msg += `• ${i.name} - ${i.quantity}x ${formatCurrency(i.price)}\n`);
+  msg += `\n*TOTAL: ${formatCurrency(total)}*`;
+  if (catatan) msg += `\nCatatan: ${catatan}`;
 
-    if (confirm('Kirim pesanan ke WhatsApp?')) {
-      window.open(waUrl, '_blank');
-      cart = [];
-      saveCart();
-      alert('Pesanan berhasil dikirim!');
-      window.location.href = 'index.html';
-    }
+  const waNumber = '6285176773633';
+  const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+
+  if (confirm('Kirim pesanan ke WhatsApp?')) {
+    window.open(waUrl, '_blank');
+    cart = [];
+    saveCart();
+    alert('Pesanan berhasil dikirim!');
+    window.location.href = 'index.html';
   }
 }
+  }
