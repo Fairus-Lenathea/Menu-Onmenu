@@ -102,7 +102,7 @@ const products = [
     price: 55000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Ajisan Pilus Sakura.jpg'
+    imageUrl: './img/Ajisan Pilus sakura.jpg'
   },
   {
     name: 'Pilus Jagung 1kg',
@@ -110,7 +110,7 @@ const products = [
     price: 50000,
     stock: 100,
     category: 'camilan',
-    imageUrl: './img/Pilus Jagung.jpg'
+    imageUrl: './img/Pilus jagung.jpg'
   },
   {
     name: 'Cup Cup Balado 1kg',
