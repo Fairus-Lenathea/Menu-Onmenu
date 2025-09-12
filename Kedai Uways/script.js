@@ -164,7 +164,9 @@ if (isCheckout) {
     // Generate order info
     document.getElementById('order-id').textContent = 'TBU' + Date.now().toString().slice(-8);
     document.getElementById('order-date').textContent = new Date().toLocaleString('id-ID', {
-      timeZone: 'Asia/Makassar'
+      timeZone: 'Asia/Makassar',
+      dateStyle: 'full',
+      timeStyle: 'short'
     });
   });
 
@@ -228,8 +230,12 @@ if (isCheckout) {
       return;
     }
 
+    const orderId = document.getElementById('order-id').textContent;
+    const orderDate = document.getElementById('order-date').textContent;
     const total = cart.reduce((a, b) => a + b.price * b.quantity, 0);
+
     let msg = `*PESANAN TOKO BUAH UWAIS*\n\n`;
+    msg += `ID Pesanan: ${orderId}\nTanggal: ${orderDate}\n\n`;
     msg += `Nama: ${nama}\nWhatsApp: ${wa}\nAlamat: ${alamat}\n\n`;
     cart.forEach(i => msg += `• ${i.name} - ${i.quantity}x ${formatCurrency(i.price)}\n`);
     msg += `\n*TOTAL: ${formatCurrency(total)}*`;

@@ -43,29 +43,40 @@
 }
 
 /* ===== RESET & BASE ===== */
+/* ===== RESET GLOBAL & FIX WHITESPACE ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f9fafb; /* sama dengan --bg-color */
+}
+
 body {
-  background-color: #e9ecef; /* Latar luar abu-abu */
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 2rem 0;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
+/* ===== CONTAINER FIX ===== */
 .container {
-  width: 360px; /* Tetap seperti handphone */
+  width: 360px;
+  max-width: 100%;
+  min-height: 100vh;
   background-color: var(--bg-color);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 /* ===== LAYOUT & NAVIGASI ===== */
 .header {
