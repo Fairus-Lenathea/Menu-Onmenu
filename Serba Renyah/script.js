@@ -284,7 +284,7 @@ if (isCheckout) {
   msg += `\n*TOTAL: ${formatCurrency(total)}*`;
   if (catatan) msg += `\nCatatan: ${catatan}`;
 
-  const waNumber = '6285176773633';
+  const waNumber = '6285158155081';
   const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
 
   if (confirm('Kirim pesanan ke WhatsApp?')) {
