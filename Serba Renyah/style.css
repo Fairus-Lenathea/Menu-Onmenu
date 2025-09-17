@@ -622,3 +622,105 @@ body {
 .product-card.hidden {
   display: none;
 }
+/* ===== MODAL VARIAN – RAMAH HP ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: flex-end;   /* muncul dari bawah */
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.5rem 1rem 2rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  float: right;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.modal-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#modal-variants {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#modal-variants label {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+#modal-variants label:active {
+  background-color: #fef2f2;
+  border-color: #B12323;
+}
+
+#modal-variants input[type="radio"] {
+  margin-right: 0.75rem;
+  transform: scale(1.2);
+}
+
+.modal-add-btn {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0.85rem;
+  background-color: #B12323;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-add-btn:active {
+  background-color: #8f1c1c;
+}
+
+/* desktop: modal di tengah */
+@media (min-width: 481px) {
+  .modal {
+    align-items: center;
+  }
+  .modal-content {
+    width: 400px;
+    border-radius: 1rem;
+    max-height: 90vh;
+  }
+}

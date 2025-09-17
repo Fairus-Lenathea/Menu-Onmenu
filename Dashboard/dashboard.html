@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - onmenu.id</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🍽️ onmenu.id</div>
+    <div class="user-info">
+      <img id="storeLogoPreview" src="" alt="Logo">
+      <span id="storeNameDisplay">Toko Saya</span>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="showPage('dashboard')">📊 Dashboard</button>
+    <button onclick="showPage('products')">🍔 Produk</button>
+    <button onclick="showPage('orders')">📦 Pesanan</button>
+    <button onclick="showPage('settings')">⚙️ Pengaturan</button>
+  </nav>
+
+  <main id="content"></main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

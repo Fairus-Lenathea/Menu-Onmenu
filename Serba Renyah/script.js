@@ -1,73 +1,258 @@
-// ===== DATA PRODUK =====
+// ===== DATA PRODUK BARU =====
+// ===== DATA PRODUK BARU (SEMUA PRODUK LAMA DIKONSOLIDASI) =====
 const products = [
-  // ==== 1 Kg ====
-  { name: 'Basreng Stik Pedas 1 Kg', description: 'Camilan lezat dan renyah', price: 80000, stock: 100, imageUrl: './img/Basreng Pedas.jpg' },
-  { name: 'Basreng Stik Original 1 Kg', description: 'Camilan lezat dan renyah', price: 80000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
-  { name: 'Kripik Tempe Rasa Original 1kg', description: 'Camilan lezat dan renyah', price: 70000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
-  { name: 'Opak Singkong Pedas Manis 1kg', description: 'Camilan lezat dan renyah', price: 60000, stock: 100, imageUrl: './img/Opak Singkong.jpg' },
-  { name: 'Stik Sukun 1kg', description: 'Camilan lezat dan renyah', price: 75000, stock: 100, imageUrl: './img/Stik Sukun.jpg' },
-  { name: 'Mini Astor Vanilla 1kg', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
-  { name: 'Mini Astor Coklat Jeruk 1kg', description: 'Camilan lezat dan renyah', price: 55000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
-  { name: 'Cokelat Sereal 1kg', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Sereal Cokelat.jpg' },
-  { name: 'Mini Soes Coklat 1kg', description: 'Camilan lezat dan renyah', price: 90000, stock: 100, imageUrl: './img/Mini Soes Cokelat.jpg' },
-  { name: 'Kue Selai Hati 1kg', description: 'Camilan lezat dan renyah', price: 90000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
-  { name: 'Biskuit Wijen Caramel 1kg', description: 'Camilan lezat dan renyah', price: 70000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
-  { name: 'Makaroni Pedas 1kg', description: 'Camilan lezat dan renyah', price: 40000, stock: 100, imageUrl: './img/Makaroni Pedas.jpg' },
-  { name: 'Ajisan 1kg', description: 'Camilan lezat dan renyah', price: 55000, stock: 100, imageUrl: './img/Ajisan Pilus sakura.jpg' },
-  { name: 'Pilus Jagung 1kg', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Pilus jagung.jpg' },
-  { name: 'Cup Cup Balado 1kg', description: 'Camilan lezat dan renyah', price: 60000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
-  { name: 'Kerupuk Seblak 1kg', description: 'Camilan lezat dan renyah', price: 70000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
-  { name: 'Kacang Atom 1kg', description: 'Camilan lezat dan renyah', price: 60000, stock: 100, imageUrl: './img/Kacang Atom Oven.jpg' },
-  { name: 'Kacang Kentucky 1kg', description: 'Camilan lezat dan renyah', price: 65000, stock: 100, imageUrl: './img/Kacang Kentucky.jpg' },
-  { name: 'Kacang Thailand 1kg', description: 'Camilan lezat dan renyah', price: 82000, stock: 100, imageUrl: './img/Kacang Thailand.jpg' },
-  { name: 'Kacang Koro Kupas 1kg', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Kacang Koro Kupas.jpg' },
-  { name: 'Kacang Campur 1kg', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Kacang Campur.jpg' },
-
-  // ==== 500g ====
-  { name: 'Basreng Stik Pedas 500g', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Basreng Pedas.jpg' },
-  { name: 'Basreng Stik Original 500g', description: 'Camilan lezat dan renyah', price: 45000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
-  { name: 'Kripik Tempe Rasa Original 500g', description: 'Camilan lezat dan renyah', price: 40000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
-  { name: 'Opak Singkong Pedas Manis 500g', description: 'Camilan lezat dan renyah', price: 35000, stock: 100, imageUrl: './img/Opak Singkong.jpg' },
-  { name: 'Stik Sukun 500g', description: 'Camilan lezat dan renyah', price: 42000, stock: 100, imageUrl: './img/Stik Sukun 500g.jpg' },
-  { name: 'Mini Astor Vanilla 500g', description: 'Camilan lezat dan renyah', price: 30000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
-  { name: 'Mini Astor Coklat Jeruk 500g', description: 'Camilan lezat dan renyah', price: 32000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
-  { name: 'Cokelat Sereal 500g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Sereal Cokelat.jpg' },
-  { name: 'Mini Soes Coklat 500g', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Mini Soes Cokelat.jpg' },
-  { name: 'Kue Selai Hati 500g', description: 'Camilan lezat dan renyah', price: 50000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
-  { name: 'Biskuit Wijen Caramel 500g', description: 'Camilan lezat dan renyah', price: 40000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
-  { name: 'Makaroni Pedas 500g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Makaroni Pedas.jpg' },
-  { name: 'Ajisan 500g', description: 'Camilan lezat dan renyah', price: 32000, stock: 100, imageUrl: './img/Ajisan Pilus sakura.jpg' },
-  { name: 'Pilus Jagung 500g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Pilus jagung.jpg' },
-  { name: 'Cup Cup Balado 500g', description: 'Camilan lezat dan renyah', price: 33000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
-  { name: 'Kerupuk Seblak 500g', description: 'Camilan lezat dan renyah', price: 37000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
-  { name: 'Kacang Atom 500g', description: 'Camilan lezat dan renyah', price: 33000, stock: 100, imageUrl: './img/Kacang Atom Oven.jpg' },
-  { name: 'Kacang Kentucky 500g', description: 'Camilan lezat dan renyah', price: 35000, stock: 100, imageUrl: './img/Kacang Kentucky.jpg' },
-  { name: 'Kacang Thailand 500g', description: 'Camilan lezat dan renyah', price: 44000, stock: 100, imageUrl: './img/Kacang Thailand.jpg' },
-  { name: 'Kacang Koro Kupas 500g', description: 'Camilan lezat dan renyah', price: 26000, stock: 100, imageUrl: './img/Kacang Koro Kupas.jpg' },
-  { name: 'Kacang Campur 500g', description: 'Camilan lezat dan renyah', price: 29000, stock: 100, imageUrl: './img/Kacang Campur.jpg' },
-
-  // ==== 250g ====
-  { name: 'Basreng Stik Pedas 250g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Basreng Pedas.jpg' },
-  { name: 'Basreng Stik Original 250g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
-  { name: 'Kripik Tempe Rasa Original 250g', description: 'Camilan lezat dan renyah', price: 22000, stock: 100, imageUrl: './img/Basreng Original.jpg' },
-  { name: 'Opak Singkong Pedas Manis 250g', description: 'Camilan lezat dan renyah', price: 20000, stock: 100, imageUrl: './img/Opak Singkong.jpg' },
-  { name: 'Stik Sukun 250g', description: 'Camilan lezat dan renyah', price: 23000, stock: 100, imageUrl: './img/Stik Sukun.jpg' },
-  { name: 'Mini Astor Vanilla 250g', description: 'Camilan lezat dan renyah', price: 17000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
-  { name: 'Mini Astor Coklat Jeruk 250g', description: 'Camilan lezat dan renyah', price: 18000, stock: 100, imageUrl: './img/Mini Astor Vanilla.jpg' },
-  { name: 'Cokelat Sereal 250g', description: 'Camilan lezat dan renyah', price: 16000, stock: 100, imageUrl: './img/Sereal Cokelat.jpg' },
-  { name: 'Mini Soes Coklat 250g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Mini Soes Coklat.jpg' },
-  { name: 'Kue Selai Hati 250g', description: 'Camilan lezat dan renyah', price: 28000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
-  { name: 'Biskuit Wijen Caramel 250g', description: 'Camilan lezat dan renyah', price: 22000, stock: 100, imageUrl: './img/Selai Hati.jpg' },
-  { name: 'Makaroni Pedas 250g', description: 'Camilan lezat dan renyah', price: 15000, stock: 100, imageUrl: './img/Makaroni Pedas.jpg' },
-  { name: 'Ajisan 250g', description: 'Camilan lezat dan renyah', price: 18000, stock: 100, imageUrl: './img/Ajisan Pilus sakura.jpg' },
-  { name: 'Pilus Jagung 250g', description: 'Camilan lezat dan renyah', price: 17000, stock: 100, imageUrl: './img/Pilus jagung.jpg' },
-  { name: 'Cup Cup Balado 250g', description: 'Camilan lezat dan renyah', price: 20000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
-  { name: 'Kerupuk Seblak 250g', description: 'Camilan lezat dan renyah', price: 22000, stock: 100, imageUrl: './img/Cup Cup Balado.jpg' },
-  { name: 'Kacang Atom 250g', description: 'Camilan lezat dan renyah', price: 20000, stock: 100, imageUrl: './img/Kacang Atom Oven.jpg' },
-  { name: 'Kacang Kentucky 250g', description: 'Camilan lezat dan renyah', price: 21000, stock: 100, imageUrl: './img/Kacang Kentucky.jpg' },
-  { name: 'Kacang Thailand 250g', description: 'Camilan lezat dan renyah', price: 25000, stock: 100, imageUrl: './img/Kacang Thailand.jpg' },
-  { name: 'Kacang Koro Kupas 250g', description: 'Camilan lezat dan renyah', price: 16000, stock: 100, imageUrl: './img/Kacang Koro Kupas.jpg' },
-  { name: 'Kacang Campur 250g', description: 'Camilan lezat dan renyah', price: 17000, stock: 100, imageUrl: './img/Kacang Campur.jpg' }
+  {
+    name: 'Basreng Stik Pedas',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Basreng Pedas.jpg',
+    category: 'Kerupuk',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 80000 },
+      { size: '500g', price: 45000 },
+      { size: '250g', price: 25000 }
+    ]
+  },
+  {
+    name: 'Basreng Stik Original',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Basreng Original.jpg',
+    category: 'Kerupuk',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 80000 },
+      { size: '500g', price: 45000 },
+      { size: '250g', price: 25000 }
+    ]
+  },
+  {
+    name: 'Kripik Tempe Rasa Original',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Basreng Original.jpg',
+    category: 'Kerupuk',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 70000 },
+      { size: '500g', price: 40000 },
+      { size: '250g', price: 22000 }
+    ]
+  },
+  {
+    name: 'Opak Singkong Pedas Manis',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Opak Singkong.jpg',
+    category: 'Kerupuk',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 60000 },
+      { size: '500g', price: 35000 },
+      { size: '250g', price: 20000 }
+    ]
+  },
+  {
+    name: 'Stik Sukun',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Stik Sukun.jpg',
+    category: 'Kerupuk',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 75000 },
+      { size: '500g', price: 42000 },
+      { size: '250g', price: 23000 }
+    ]
+  },
+  {
+    name: 'Mini Astor Vanilla',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Mini Astor Vanilla.jpg',
+    category: 'Kue & Manis',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 50000 },
+      { size: '500g', price: 30000 },
+      { size: '250g', price: 17000 }
+    ]
+  },
+  {
+    name: 'Mini Astor Coklat Jeruk',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Mini Astor Vanilla.jpg',
+    category: 'Kue & Manis',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 55000 },
+      { size: '500g', price: 32000 },
+      { size: '250g', price: 18000 }
+    ]
+  },
+  {
+    name: 'Cokelat Sereal',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Sereal Cokelat.jpg',
+    category: 'Kue & Manis',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 45000 },
+      { size: '500g', price: 28000 },
+      { size: '250g', price: 16000 }
+    ]
+  },
+  {
+    name: 'Mini Soes Coklat',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Mini Soes Cokelat.jpg',
+    category: 'Kue & Manis',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 90000 },
+      { size: '500g', price: 50000 },
+      { size: '250g', price: 28000 }
+    ]
+  },
+  {
+    name: 'Kue Selai Hati',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Selai Hati.jpg',
+    category: 'Kue & Manis',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 90000 },
+      { size: '500g', price: 50000 },
+      { size: '250g', price: 28000 }
+    ]
+  },
+  {
+    name: 'Biskuit Wijen Caramel',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Selai Hati.jpg',
+    category: 'Kue & Manis',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 70000 },
+      { size: '500g', price: 40000 },
+      { size: '250g', price: 22000 }
+    ]
+  },
+  {
+    name: 'Makaroni Pedas',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Makaroni Pedas.jpg',
+    category: 'Gurih & Renyah',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 40000 },
+      { size: '500g', price: 25000 },
+      { size: '250g', price: 15000 }
+    ]
+  },
+  {
+    name: 'Ajisan',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Ajisan Pilus sakura.jpg',
+    category: 'Gurih & Renyah',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 55000 },
+      { size: '500g', price: 32000 },
+      { size: '250g', price: 18000 }
+    ]
+  },
+  {
+    name: 'Pilus Jagung',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Pilus jagung.jpg',
+    category: 'Gurih & Renyah',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 50000 },
+      { size: '500g', price: 28000 },
+      { size: '250g', price: 17000 }
+    ]
+  },
+  {
+    name: 'Cup Cup Balado',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Cup Cup Balado.jpg',
+    category: 'Gurih & Renyah',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 60000 },
+      { size: '500g', price: 33000 },
+      { size: '250g', price: 20000 }
+    ]
+  },
+  {
+    name: 'Kerupuk Seblak',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Cup Cup Balado.jpg',
+    category: 'Gurih & Renyah',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 70000 },
+      { size: '500g', price: 37000 },
+      { size: '250g', price: 22000 }
+    ]
+  },
+  {
+    name: 'Kacang Atom',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Kacang Atom Oven.jpg',
+    category: 'Kacang-kacangan',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 60000 },
+      { size: '500g', price: 33000 },
+      { size: '250g', price: 20000 }
+    ]
+  },
+  {
+    name: 'Kacang Kentucky',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Kacang Kentucky.jpg',
+    category: 'Kacang-kacangan',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 65000 },
+      { size: '500g', price: 35000 },
+      { size: '250g', price: 21000 }
+    ]
+  },
+  {
+    name: 'Kacang Thailand',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Kacang Thailand.jpg',
+    category: 'Kacang-kacangan',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 82000 },
+      { size: '500g', price: 44000 },
+      { size: '250g', price: 25000 }
+    ]
+  },
+  {
+    name: 'Kacang Koro Kupas',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Kacang Koro Kupas.jpg',
+    category: 'Kacang-kacangan',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 45000 },
+      { size: '500g', price: 26000 },
+      { size: '250g', price: 16000 }
+    ]
+  },
+  {
+    name: 'Kacang Campur',
+    description: 'Camilan lezat dan renyah',
+    imageUrl: './img/Kacang Campur.jpg',
+    category: 'Kacang-kacangan',
+    stock: 100,
+    variants: [
+      { size: '1 Kg', price: 50000 },
+      { size: '500g', price: 29000 },
+      { size: '250g', price: 17000 }
+    ]
+  }
 ];
 
 let cart = [];
@@ -90,31 +275,13 @@ function loadCart() {
 const isCatalog = window.location.pathname.includes('index.html') || window.location.pathname === '/';
 const isCheckout = window.location.pathname.includes('checkout.html');
 
-// ===== FUNGSI UNTUK MENDAPATKAN KATEGORI BERDASARKAN NAMA PRODUK =====
-function getCategoryFromName(name) {
-  if (name.includes('1 Kg') || name.includes('1kg')) return '1Kg';
-  if (name.includes('500g')) return '500g';
-  if (name.includes('250g')) return '250g';
-  return 'lainnya';
-}
-
 // ===== HALAMAN KATALOG =====
 if (isCatalog) {
   document.addEventListener('DOMContentLoaded', () => {
     loadCart();
     renderProducts();
     updateCartDisplay();
-
-    document.addEventListener('click', e => {
-      if (e.target.classList.contains('add-to-cart')) {
-        const name = e.target.dataset.product;
-        const price = parseInt(e.target.dataset.price);
-        const existing = cart.find(i => i.name === name);
-        existing ? existing.quantity++ : cart.push({ name, price, quantity: 1 });
-        saveCart();
-        updateCartDisplay();
-      }
-    });
+    setupModalEvents();
 
     document.getElementById('checkout-btn')?.addEventListener('click', () => {
       if (cart.length === 0) {
@@ -143,17 +310,17 @@ if (isCatalog) {
     if (!grid) return;
     grid.innerHTML = '';
     products.forEach(p => {
-      const category = getCategoryFromName(p.name);
+      const minPrice = Math.min(...p.variants.map(v => v.price));
       const card = document.createElement('div');
       card.className = 'product-card';
-      card.dataset.category = category;
+      card.dataset.category = p.category;
       card.innerHTML = `
         <img src="${p.imageUrl}" alt="${p.name}" />
         <h3>${p.name}</h3>
         <p class="product-desc">${p.description}</p>
-        <p class="price">${formatCurrency(p.price)}</p>
+        <p class="price">Mulai dari ${formatCurrency(minPrice)}</p>
         <p class="stock">Stok: ${p.stock}</p>
-        <button class="add-to-cart" data-product="${p.name}" data-price="${p.price}">Tambahkan</button>
+        <button class="add-to-cart" data-product='${JSON.stringify(p)}'>Tambahkan</button>
       `;
       grid.appendChild(card);
     });
@@ -168,8 +335,7 @@ if (isCatalog) {
 
   function filterProducts(category) {
     document.querySelectorAll('.product-card').forEach(card => {
-      const cardCategory = card.dataset.category;
-      const shouldShow = category === 'semua' || cardCategory === category;
+      const shouldShow = category === 'semua' || card.dataset.category === category;
       card.classList.toggle('hidden', !shouldShow);
     });
   }
@@ -187,6 +353,56 @@ if (isCatalog) {
         card.classList.remove('hidden');
       }
     });
+  }
+
+  function setupModalEvents() {
+    document.addEventListener('click', e => {
+      if (e.target.classList.contains('add-to-cart')) {
+        const product = JSON.parse(e.target.dataset.product);
+        showVariantModal(product);
+      }
+    });
+
+    document.getElementById('modal-close')?.addEventListener('click', closeVariantModal);
+    document.getElementById('modal-add')?.addEventListener('click', () => {
+      const selected = document.querySelector('input[name="variant"]:checked');
+      if (!selected) {
+        alert('Pilih varian ukuran!');
+        return;
+      }
+      const variant = JSON.parse(selected.value);
+      const product = JSON.parse(document.getElementById('modal-product').dataset.product);
+      const itemName = `${product.name} (${variant.size})`;
+      const existing = cart.find(i => i.name === itemName);
+      existing ? existing.quantity++ : cart.push({ name: itemName, price: variant.price, quantity: 1 });
+      saveCart();
+      updateCartDisplay();
+      closeVariantModal();
+    });
+  }
+
+  function showVariantModal(product) {
+    const modal = document.getElementById('variant-modal');
+    const title = document.getElementById('modal-title');
+    const image = document.getElementById('modal-image');
+    const variants = document.getElementById('modal-variants');
+    title.textContent = product.name;
+    image.src = product.imageUrl;
+    document.getElementById('modal-product').dataset.product = JSON.stringify(product);
+    variants.innerHTML = '';
+    product.variants.forEach(v => {
+      const label = document.createElement('label');
+      label.innerHTML = `
+        <input type="radio" name="variant" value='${JSON.stringify(v)}' />
+        ${v.size} - ${formatCurrency(v.price)}
+      `;
+      variants.appendChild(label);
+    });
+    modal.classList.add('active');
+  }
+
+  function closeVariantModal() {
+    document.getElementById('variant-modal').classList.remove('active');
   }
 }
 
@@ -206,7 +422,6 @@ if (isCheckout) {
 
     document.getElementById('send-order')?.addEventListener('click', processOrder);
 
-    // Generate order info
     document.getElementById('order-id').textContent = 'TSR' + Date.now().toString().slice(-8);
     document.getElementById('order-date').textContent = new Date().toLocaleString('id-ID', {
       timeZone: 'Asia/Makassar'
@@ -262,37 +477,37 @@ if (isCheckout) {
     }
   };
 
-    function processOrder() {
-  const nama = document.getElementById('nama-lengkap')?.value.trim();
-  const wa = document.getElementById('whatsapp')?.value.trim();
-  const alamat = document.getElementById('shipping-address')?.value.trim();
-  const catatan = document.getElementById('order-notes')?.value.trim();
+  function processOrder() {
+    const nama = document.getElementById('nama-lengkap')?.value.trim();
+    const wa = document.getElementById('whatsapp')?.value.trim();
+    const alamat = document.getElementById('shipping-address')?.value.trim();
+    const catatan = document.getElementById('order-notes')?.value.trim();
 
-  if (!nama || !wa || !alamat) {
-    alert('Lengkapi nama, WhatsApp, dan alamat!');
-    return;
-  }
+    if (!nama || !wa || !alamat) {
+      alert('Lengkapi nama, WhatsApp, dan alamat!');
+      return;
+    }
 
-  const orderId = document.getElementById('order-id').textContent;
-  const orderDate = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Makassar', dateStyle: 'full', timeStyle: 'short' });
+    const orderId = document.getElementById('order-id').textContent;
+    const orderDate = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Makassar', dateStyle: 'full', timeStyle: 'short' });
 
-  const total = cart.reduce((a, b) => a + b.price * b.quantity, 0);
-  let msg = `*PESANAN TOKO SERBA RENYAH*\n\n`;
-  msg += `ID Pesanan: ${orderId}\nTanggal Pesanan: ${orderDate}\n\n`;
-  msg += `Nama: ${nama}\nWhatsApp: ${wa}\nAlamat: ${alamat}\n\n`;
-  cart.forEach(i => msg += `• ${i.name} - ${i.quantity}x ${formatCurrency(i.price)}\n`);
-  msg += `\n*TOTAL: ${formatCurrency(total)}*`;
-  if (catatan) msg += `\nCatatan: ${catatan}`;
+    const total = cart.reduce((a, b) => a + b.price * b.quantity, 0);
+    let msg = `*PESANAN TOKO SERBA RENYAH*\n\n`;
+    msg += `ID Pesanan: ${orderId}\nTanggal Pesanan: ${orderDate}\n\n`;
+    msg += `Nama: ${nama}\nWhatsApp: ${wa}\nAlamat: ${alamat}\n\n`;
+    cart.forEach(i => msg += `• ${i.name} - ${i.quantity}x ${formatCurrency(i.price)}\n`);
+    msg += `\n*TOTAL: ${formatCurrency(total)}*`;
+    if (catatan) msg += `\nCatatan: ${catatan}`;
 
-  const waNumber = '6285158155081';
-  const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+    const waNumber = '6285158155081';
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
 
-  if (confirm('Kirim pesanan ke WhatsApp?')) {
-    window.open(waUrl, '_blank');
-    cart = [];
-    saveCart();
-    alert('Pesanan berhasil dikirim!');
-    window.location.href = 'index.html';
+    if (confirm('Kirim pesanan ke WhatsApp?')) {
+      window.open(waUrl, '_blank');
+      cart = [];
+      saveCart();
+      alert('Pesanan berhasil dikirim!');
+      window.location.href = 'index.html';
+    }
   }
 }
-  }
