@@ -1,5 +1,4 @@
-// ===== DATA PRODUK BARU =====
-// ===== DATA PRODUK BARU (SEMUA PRODUK LAMA DIKONSOLIDASI) =====
+// ===== DATA PRODUK BARU (SEMUA PRODUK LAMA ADA) =====
 const products = [
   {
     name: 'Basreng Stik Pedas',
@@ -381,24 +380,74 @@ if (isCatalog) {
     });
   }
 
-  function showVariantModal(product) {
-    const modal = document.getElementById('variant-modal');
-    const title = document.getElementById('modal-title');
-    const image = document.getElementById('modal-image');
-    const variants = document.getElementById('modal-variants');
-    title.textContent = product.name;
-    image.src = product.imageUrl;
-    document.getElementById('modal-product').dataset.product = JSON.stringify(product);
-    variants.innerHTML = '';
-    product.variants.forEach(v => {
-      const label = document.createElement('label');
-      label.innerHTML = `
-        <input type="radio" name="variant" value='${JSON.stringify(v)}' />
-        ${v.size} - ${formatCurrency(v.price)}
-      `;
-      variants.appendChild(label);
-    });
-    modal.classList.add('active');
+  function showVariantModal(product){
+      const modal       = document.getElementById('variant-modal');
+      const modalContent= modal.querySelector('.modal-content');
+      const title       = document.getElementById('modal-title');
+      const image       = document.getElementById('modal-image');
+      const variantsDiv = document.getElementById('modal-variants');
+
+      title.textContent = product.name;
+      image.src         = product.imageUrl;
+      image.alt         = product.name;
+
+      /* kosongkan dulu */
+      modalContent.innerHTML = '';
+
+      /* 1. area scroll (gambar + judul + pilihan) */
+      const scrollArea = document.createElement('div');
+      scrollArea.className = 'modal-scroll';
+
+      const closeBtn = document.createElement('span');
+      closeBtn.id    = 'modal-close';
+      closeBtn.className = 'modal-close';
+      closeBtn.innerHTML = '&times;';
+
+      const heading = document.createElement('h3');
+      heading.textContent = product.name;
+
+      const img = document.createElement('img');
+      img.src = product.imageUrl;
+      img.alt = product.name;
+
+      /* isi pilihan ukuran */
+      variantsDiv.innerHTML = '';
+      product.variants.forEach(v=>{
+          const label = document.createElement('label');
+          label.innerHTML = `
+              <input type="radio" name="variant" value='${JSON.stringify(v)}'>
+              <span>${v.size} – ${formatCurrency(v.price)}</span>`;
+          variantsDiv.appendChild(label);
+      });
+
+      scrollArea.appendChild(closeBtn);
+      scrollArea.appendChild(img);
+      scrollArea.appendChild(heading);
+      scrollArea.appendChild(variantsDiv);
+
+      /* 2. area tombol (selalu kelihatan) */
+      const footArea = document.createElement('div');
+      footArea.className = 'modal-footer';
+      footArea.innerHTML = `<button id="modal-add" class="modal-add-btn">Tambah ke Keranjang</button>`;
+
+      modalContent.appendChild(scrollArea);
+      modalContent.appendChild(footArea);
+
+      /* tampilkan modal */
+      modal.classList.add('active');
+
+      /* event – close & add */
+      closeBtn.onclick = ()=> modal.classList.remove('active');
+      document.getElementById('modal-add').onclick = ()=>{
+          const selected = document.querySelector('input[name="variant"]:checked');
+          if(!selected){ alert('Pilih ukuran dulu ya'); return; }
+          const variant = JSON.parse(selected.value);
+          const itemName = `${product.name} (${variant.size})`;
+          const exist = cart.find(i=>i.name===itemName);
+          exist ? exist.quantity++ : cart.push({name:itemName, price:variant.price, quantity:1});
+          saveCart(); updateCartDisplay();
+          modal.classList.remove('active');
+      };
   }
 
   function closeVariantModal() {
@@ -499,7 +548,7 @@ if (isCheckout) {
     msg += `\n*TOTAL: ${formatCurrency(total)}*`;
     if (catatan) msg += `\nCatatan: ${catatan}`;
 
-    const waNumber = '6285158155081';
+    const waNumber = '6285163080328';
     const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
 
     if (confirm('Kirim pesanan ke WhatsApp?')) {
