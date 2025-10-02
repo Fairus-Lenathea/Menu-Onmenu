@@ -97,8 +97,10 @@ body {
 }
 
 .header-title {
-  height: 32px;
-  width: auto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
 }
 
 /* ===== KOMPONEN HALAMAN KATALOG ===== */
