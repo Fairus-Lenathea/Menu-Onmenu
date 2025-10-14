@@ -94,6 +94,9 @@ body {
   font-size: var(--font-size-lg);
   cursor: pointer;
   color: var(--text-secondary);
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .header-title {
@@ -169,6 +172,11 @@ body {
   background-color: var(--primary-color);
   color: var(--card-bg-color);
   border-color: var(--primary-color);
+}
+
+.category-button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 .product-grid {
