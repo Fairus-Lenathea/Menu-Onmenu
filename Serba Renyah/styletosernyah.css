@@ -173,9 +173,9 @@ body {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 1rem 1rem 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  padding: 0.75rem 0.75rem 5rem;
 }
 
 .product-card {
@@ -725,11 +725,6 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 0;
-  }
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-    padding: 0.75rem 0.75rem 5rem;
   }
   .welcome-card,
   .search-bar,

@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Toko Serba Renyah</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="styletosernyah.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
@@ -50,28 +50,18 @@
   <!-- Modal Varian -->
   <div id="variant-modal" class="modal">
     <div class="modal-content">
-      <span id="modal-close" class="modal-close">&times;</span>
-      <img id="modal-image" src="" alt="Gambar Produk" style="width:100%;border-radius:.5rem;margin-bottom:1rem;"/>
-      <h3 id="modal-title"></h3>
-      <div id="modal-variants"></div>
-      <button id="modal-add" class="modal-add-btn">Tambah ke Keranjang</button>
-      <div id="modal-product" style="display:none;"></div>
+      <div class="modal-scroll">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-image" src="" alt="Gambar Produk" />
+        <h3 id="modal-title"></h3>
+        <div id="modal-variants"></div>
+        <div id="modal-product" style="display:none;"></div>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-add" class="modal-add-btn">Tambah ke Keranjang</button>
+      </div>
     </div>
   </div>
-<!-- Tambahkan sebelum </body> -->
-<div id="variant-modal" class="modal">
-  <div class="modal-content">
-    <div class="modal-scroll">
-      <span id="modal-close" class="modal-close">&times;</span>
-      <img id="modal-image" src="" alt="" />
-      <h3 id="modal-title"></h3>
-      <div id="modal-variants"></div>
-    </div>
-    <div class="modal-footer">
-      <button id="modal-add" class="modal-add-btn">Tambah ke Keranjang</button>
-    </div>
-  </div>
-</div>
   <script src="script.js"></script>
 </body>
 </html>
