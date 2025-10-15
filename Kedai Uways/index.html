@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toko Buah Uwais</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kedai Uwais</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <div class="back-arrow"><i class="fas fa-arrow-left"></i></div>
-      <img src="#" alt="Toko Buah Uwais Logo" class="header-logo" />
+      <button class="back-arrow" aria-label="Kembali">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      </button>
+      <h1 class="header-title">Kedai Uwais</h1>
     </header>
 
     <div class="welcome-card">
-      <h2>Selamat Datang di Toko Buah Uwais</h2>
-      <p>Buah Segar Pilihan di Makassar</p>
+      <h2>Selamat Datang di Kedai Uwais</h2>
+      <p>Pilihan Buah dan Sayur Segar</p>
     </div>
 
     <div class="search-bar">
-      <input type="text" placeholder="Cari Produk..." id="search-input" />
+      <input type="text" placeholder="Cari Produk..." id="search-input"/>
     </div>
 
     <nav class="product-categories">
       <button class="category-button active" data-category="semua">Semua</button>
       <button class="category-button" data-category="buah">Buah</button>
+      <button class="category-button" data-category="sayur">Sayur</button>
     </nav>
 
-    <!-- Elemen penting ini -->
     <section class="product-grid" id="product-grid"></section>
 
     <footer class="cart-summary">
@@ -43,10 +43,26 @@
         <p>Total</p>
         <p class="total-amount">Rp0</p>
       </div>
-      <button  class="checkout-button" id="checkout-btn">Bayar</button>
+      <button class="checkout-button" id="checkout-btn">Bayar</button>
     </footer>
   </div>
 
+  <!-- Modal Varian -->
+  <div id="variant-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-scroll">
+        <button id="modal-close" class="modal-close" aria-label="Tutup Pilihan Varian">&times;</button>
+        <img id="modal-image" src="" alt="" />
+        <h3 id="modal-title"></h3>
+        <div id="modal-variants">
+          <!-- Pilihan varian akan diisi oleh JS di sini -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-add" class="modal-add-btn">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
